@@ -98,6 +98,11 @@ h2{
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
+    width: 100%;
+}
+
+.div-bebida{
+    width: 100%;
 }
 
 .titulo-produto{
