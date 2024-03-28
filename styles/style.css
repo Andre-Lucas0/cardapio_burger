@@ -15,7 +15,7 @@
     }
 
     .div-modal{
-        min-width: 500px;
+        min-width: 90%;
     }
 }
 
@@ -186,7 +186,7 @@ footer{
  background-color: white;
  padding: 20px;
  border-radius: 10px;
- min-width: 90%;
+ min-width: 450px;
 }
 
 h4{
