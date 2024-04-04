@@ -195,6 +195,10 @@ h4{
     margin-bottom: 10px;
 }
 
+.modal-total{
+    margin-bottom: 15px;
+}
+
 #address{
     width: 100%;
     border: 2px black;
@@ -214,11 +218,13 @@ h4{
 .button-finalizar{
     background-color: rgb(25, 189, 25);
     color: white;
-    padding: 5px 30px;
+    padding: 7px 30px;
     margin: 10px;
     border: none;
-    border-radius: 5px;
-    
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 .button-finalizar:hover{
