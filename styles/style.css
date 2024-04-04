@@ -160,6 +160,7 @@ footer{
     padding: 15px 0px;
     gap: 20px;
     font-size: medium;
+    border: none;
 }
 
 .modal{
@@ -200,4 +201,26 @@ h4{
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+}
+
+.aviso-endereco{
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+
+
+.button-finalizar{
+    background-color: rgb(25, 189, 25);
+    color: white;
+    padding: 5px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.button-finalizar:hover{
+    background-color: green;
 }
