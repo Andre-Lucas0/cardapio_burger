@@ -199,12 +199,10 @@ h4{
     margin-bottom: 15px;
 }
 
-#address{
+#endereco{
+    padding: 5px 0px;
     width: 100%;
-    border: 2px black;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .aviso-endereco{
@@ -214,14 +212,20 @@ h4{
 }
 
 
+.button-fechar{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
 
 .button-finalizar{
     background-color: rgb(25, 189, 25);
     color: white;
     padding: 7px 30px;
-    margin: 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -229,4 +233,11 @@ h4{
 
 .button-finalizar:hover{
     background-color: green;
+}
+
+.div-fechar-finalizar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 12px 0px;
 }
