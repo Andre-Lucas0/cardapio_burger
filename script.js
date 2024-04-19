@@ -1,3 +1,7 @@
+window.sr = ScrollReveal({reset: true})
+sr.reveal('.bebidas', { duration: 1000 })
+sr.reveal('.bebidas1', { duration: 1000 })
+
 const menu = document.getElementById("menu")
 const btnFooter = document.getElementById("button-footer")
 const cartModal = document.getElementById("modal")
@@ -15,4 +19,10 @@ btnFooter.addEventListener("click", function() {
 
 closeModalBtn.addEventListener("click", function() {
     cartModal.style.display = "none"
+})
+
+cartModal.addEventListener("click", function(event){
+    if(event.target === cartModal) {
+        cartModal.style.display = "none"
+    }
 })

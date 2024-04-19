@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Smash Burger</title>
 </head>
 
@@ -80,11 +82,11 @@
             
         </main>
 
-        <div>
+        <div class="bebidas">
             <h2>Bebidas</h2>
         </div>
         
-        <div class="main-produtos" id="menu">
+        <div class="main-produtos bebidas1" id="menu">
             <div class="div-produto">
                 <img class="produto" src="assets/refri-1.png" alt="coca-cola">
                 <div class="div-bebida">
@@ -111,20 +113,22 @@
     </div>
 
     <div class="modal" id="modal"> <!--MODAL-->
-        <div class="div-modal">
-            <h4>Meu Carrinho</h4>
-            <div id="cart-items" class="cart-items">
-                <p class="modal-total">Total: <strong><span id="cart-total">0.00</span></strong></p>
-                <p>Endereço da entrega:</p>
-                <input type="text" name="Seu Endereço" placeholder=" Digite aqui seu endereço" id="endereco">
-                <p class="aviso-endereco" id="endereco-aviso">Digite seu endereço completo!</p>
-                <div class="div-fechar-finalizar">
-                    <button class="button-fechar" id="close-modal-btn">Fechar</button>
-                    <button  class="button-finalizar" id="checkout-btn">Finalizar pedido</button>
+        <div class="backgound-modal" id="bg-modal">
+            <div class="div-modal animate__animated animate__zoomIn" >
+                <h4>Meu Carrinho</h4>
+                <div id="cart-items" class="cart-items">
+                    <p class="modal-total">Total: <strong><span id="cart-total">0.00</span></strong></p>
+                    <p>Endereço da entrega:</p>
+                    <input type="text" name="Seu Endereço" placeholder=" Digite aqui seu endereço" id="endereco">
+                    <p class="aviso-endereco" id="endereco-aviso">Digite seu endereço completo!</p>
+                    <div class="div-fechar-finalizar">
+                        <button class="button-fechar" id="close-modal-btn">Fechar</button>
+                        <button  class="button-finalizar" id="checkout-btn">Finalizar pedido</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> <!--fIM DIV MODAL-->
+                </div>
+        </div> <!--fIM DIV MODAL-->
     
     <footer>
         <button class="button-footer" id="button-footer">
