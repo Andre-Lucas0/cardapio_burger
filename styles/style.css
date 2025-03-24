@@ -259,3 +259,69 @@ h4{
 .bebidas, .bebidas1, .main-produtos1, .main-produtos2, .main-produtos3, .main-produtos4, .main-produtos5, .main-produtos6, .main-produtos6, .main-produtos7 {
     visibility: hidden;
 }
+
+/* Estilo do carrinho */
+#cart {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Para telas menores, o carrinho se ajusta */
+@media (max-width: 768px) {
+    #cart {
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+/* Estilizando os itens do carrinho */
+#cart ul {
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+}
+
+/* Botão do carrinho mais visível e ajustado */
+.button-footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.button-footer:hover {
+    background: #e65c00;
+}
+
+/* Para evitar sobreposição no iPhone */
+@media (max-width: 414px) {
+    .button-footer {
+        right: 5px;
+        bottom: 20px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
