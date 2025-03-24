@@ -143,3 +143,11 @@
     // Detectar mudança de tamanho da tela
     window.addEventListener("resize", adjustCartForMobile);
     adjustCartForMobile();
+
+cartButton.addEventListener("click", () => {
+    if (cart.style.display === "block") {
+        cart.style.display = "none";
+    } else {
+        cart.style.display = "block";
+    }
+});
